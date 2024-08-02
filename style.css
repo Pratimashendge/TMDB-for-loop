@@ -1,0 +1,46 @@
+
+
+body{
+	background-color:#042b5f;
+}
+.logo{
+	width:120px;
+	display:inline-block;
+}
+.logo img{
+	width:100%;
+	
+}
+.moviecard{
+	height:550px;
+    margin:0;
+	position:relative;
+	overflow:hidden;
+}
+.moviecard img{
+	height:100%;
+	object-fit:cover;
+}
+.movietitle{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	background-color:#042b5f;
+}
+.movieoverview{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	padding:15px;
+	background:#fff;
+	color:#333;
+	transform:translateY(120%);
+	transition:all .4s ease-in-out;
+	top:30%;
+	overflow-y:auto;
+	
+}
+.moviecard:hover .movieoverview{
+	transform:translateY(0%);
+}
